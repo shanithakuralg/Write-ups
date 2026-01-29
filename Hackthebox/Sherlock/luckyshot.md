@@ -7,8 +7,8 @@
 <p align="center">
   <b>Platform:</b> Hack The Box (Sherlock)<br>
   <b>Category:</b> Digital Forensics & Incident Response<br>
-  <b>Difficulty:</b> Medium<br>
-  <b>Author:</b> Shani Thakur<br>
+  <b>Difficulty:</b> Easy<br>
+  <b>Author:</b> Saurabh tomar<br>
   <b>Rank Achieved:</b> #169 🏆
 </p>
 
