@@ -18,7 +18,7 @@
 <p align="center">
   <!-- 🔗 ADD SHERLOCK ROOM URL HERE -->
   <!-- Example: https://app.hackthebox.com/sherlocks/LuckyShot -->
-  🔗 <a href="PASTE_SHERLOCK_ROOM_URL_HERE">Hack The Box — LuckyShot Sherlock</a>
+  🔗 <a href="[PASTE_SHERLOCK_ROOM_URL_HERE](https://labs.hackthebox.com/achievement/sherlock/847519/1123)">Hack The Box — LuckyShot Sherlock</a>
 </p>
 
 ---
