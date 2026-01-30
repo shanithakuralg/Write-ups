@@ -1,56 +1,20 @@
-# 🛡️ DFIR Case Studies — Recruiter View
+# 🕵️ My Sherlock DFIR Case Studies (Recruiter-Focused)
 
-Hi 👋  
-I’m **Saurabh Tomar**, a cybersecurity enthusiast focused on **Digital Forensics & Incident Response (DFIR)**.
-
-This section contains **short, recruiter-friendly case studies** based on real-world style investigations from **Hack The Box Sherlocks**.
-
-I’ve intentionally kept these write-ups:
-- Short
-- Outcome-focused
-- Easy to scan in under 1 minute
+Welcome! Here I share my **recruiter-focused DFIR write-ups** of Hack The Box Sherlock rooms.  
+Each write-up highlights **my thinking process, investigation steps, and key takeaways**.
 
 ---
 
-## 🔍 Featured Investigation
+## ✅ Rooms Completed
 
-### 🕵️ LuckyShot — DFIR Case Study (Hack The Box Sherlock)
+### 1. LuckyShot
+- Platform: Hack The Box (Sherlock)
+- Category: Digital Forensics & Incident Response
+- Difficulty: Easy
+- [View Full Case Study](luckyshot.md)
 
-**Scenario:**  
-An IT manager’s system was compromised. Critical files were modified, unknown services appeared, and sensitive data was exfiltrated.
-
-**My Role:**  
-Incident Response Analyst — responsible for identifying:
-- Initial access vector  
-- Attacker activity timeline  
-- Persistence mechanisms  
-- Data exfiltration  
-- Malware behavior  
-
-➡️ **[Read the 1-Page Case Study](./luckyshot.md)**
-
----
-
-## 🧠 Skills Demonstrated
-
-- Log Analysis (`auth.log`, `.bash_history`)
-- SSH brute-force detection
-- Timeline reconstruction
-- Linux persistence analysis (cron, systemd, startup files)
-- Malware triage & hash verification
-- Data exfiltration detection
-- DFIR mindset & documentation
-
----
-
-## 📂 Want Full Technical Details?
-
-Detailed step-by-step investigations with commands and explanations are available in the **public write-ups** folder.
-
----
-
-📫 **Contact**
-- GitHub: *(your profile link)*
-- LinkedIn: *(optional)*
-
-Thanks for taking the time to review my work.
+### 2. <Next Room Name>
+- Platform: Hack The Box (Sherlock)
+- Category: <Category Name>
+- Difficulty: <Easy/Medium/Hard>
+- [View Full Case Study](<next_room>.md)
