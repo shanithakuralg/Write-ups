@@ -115,3 +115,20 @@ This case strengthened my confidence in **independent DFIR investigations withou
 ---
 
 📌 *Full technical investigation with commands and hashes is available in the public GitHub write-up.*
+
+---
+
+## 📚 Full Technical Write-up (Public)
+
+This document is a **high-level DFIR case summary** intended for recruiters.
+
+If you're interested in the **complete step-by-step investigation**, including:
+- exact commands used
+- log analysis screenshots
+- failed assumptions & corrections
+- full attacker timeline reconstruction
+
+you can read the full public write-up here:
+
+🔗 **Public Technical Write-up:**  
+[Hack The Box – Sherlock LuckyShot (Full DFIR Analysis)](../../Hackthebox/Sherlock/luckyshot.md)
