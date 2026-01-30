@@ -11,7 +11,7 @@ All cases are solved **independently** without relying on public write-ups.
 
 | Case | Platform | Focus Area |
 |----|--------|-----------|
-| [🕵️ LuckyShot](./DFIR/LuckyShot) | Hack The Box (Sherlock) | Linux Forensics, Persistence, Malware |
+| [🕵️ LuckyShot](./DFIR/luckyshot.md) | Hack The Box (Sherlock) | Linux Forensics, Persistence, Malware |
 | [🕵️ GhostTrace](./DFIR/GhostTrace) | Hack The Box (Sherlock) | Windows Event Logs, Sysmon, PowerShell |
 
 ---
