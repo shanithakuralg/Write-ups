@@ -4,7 +4,7 @@
 **Category:** Drone / Flight Forensics  
 **Difficulty:** Easy  
 **Rank Achieved:** #95  
-**HTB Verification:** https://labs.hackthebox.com/achievement/sherlock/847519/1099  
+**HTB Verification:** [Hack The Box — AoTR-4 Sherlock](https://labs.hackthebox.com/achievement/sherlock/847519/1099)
 
 ---
 
