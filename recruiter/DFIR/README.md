@@ -13,7 +13,15 @@ Each write-up highlights **my thinking process, investigation steps, and key tak
 - Difficulty: Easy
 - [View Full Case Study](luckyshot.md)
 
-### 2. <Next Room Name>
+
+### 2. AoTR 4 – A Drone in the Snow
+- Platform: Hack The Box (Sherlock)
+- Category: Drone / Flight Forensics
+- Difficulty: Easy
+- Achievement: Global Rank 95
+- [View Full Case Study](AoTR-4-Drone-in-the-Snow.md)
+
+### 3. <Next Room Name>
 - Platform: Hack The Box (Sherlock)
 - Category: <Category Name>
 - Difficulty: <Easy/Medium/Hard>
