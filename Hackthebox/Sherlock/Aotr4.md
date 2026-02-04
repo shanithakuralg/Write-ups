@@ -14,7 +14,7 @@
 > Add your HTB room completion / rank screenshot **right below this section**.
 >
 > ```md
-> ![HTB AoTR 4 Rank Proof](assets/Aotr4-htb.jpg)
+> ![HTB AoTR 4 Rank Proof](https://github.com/shanithakuralg/Write-ups/blob/main/Hackthebox/Sherlock/assets/Aotr4-htb.jpg)
 > ```
 >
 > Recommended screenshots:
