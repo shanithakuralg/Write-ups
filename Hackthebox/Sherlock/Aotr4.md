@@ -1,27 +1,21 @@
+<div align="center">
+
 # 🛩️ HTB Sherlock: AoTR 4 – A Drone in the Snow
 
-**Author:** Saurabh tomar 
-**Platform:** Hack The Box – Sherlocks (AoTR Series)
-**Category:** Drone / Flight Forensics
-**Difficulty:** Easy
-**Final Achievement:** 🏆 Rank 95 on Global Leaderboard
+**Author:** Saurabh Tomar  
+**Platform:** Hack The Box – Sherlocks (AoTR Series)  
+**Category:** Drone / Flight Forensics  
+**Difficulty:** Easy  
+
+🏆 **Final Achievement:** Rank 95 on Global Leaderboard
 
 ---
 
-## 📸 Proof of Completion (Add Screenshot Here)
+## 📸 Proof of Completion
 
-> **📌 Where to add your screenshot:**
-> Add your HTB room completion / rank screenshot **right below this section**.
->
-> ```md
-> ![HTB AoTR 4 Rank Proof](https://github.com/shanithakuralg/Write-ups/blob/main/Hackthebox/Sherlock/assets/Aotr4-htb.jpg)
-> ```
->
-> Recommended screenshots:
->
-> * Room completion screen
-> * Leaderboard rank (Rank 95)
-> * HTB profile showing Sherlock solved
+![HTB AoTR 4 Rank Proof](https://raw.githubusercontent.com/shanithakuralg/Write-ups/main/Hackthebox/Sherlock/assets/Aotr4-htb.jpg)
+
+</div>
 
 ---
 
