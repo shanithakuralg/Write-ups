@@ -101,6 +101,7 @@ grep "type" AOTR_Winter_Blackout.plan | wc -l
 ---
 
 ### ❓ Question 2: How many spline waypoints are in the mission?
+
 **Answer:** ✅ **46**
 
 Spline waypoints (`command: 82`) represent smooth flight motion.
@@ -120,6 +121,7 @@ grep '"command": 82' AOTR_Winter_Blackout.plan | wc -l
 
 ### ❓ Question 3: Which landmark/building does the drone fly around during the planned route?
 
+
 **Answer:** ✅ **Citadella (Gellért Hill, Budapest)**
 
 **Method:**
@@ -133,6 +135,7 @@ grep '"command": 82' AOTR_Winter_Blackout.plan | wc -l
 ---
 
 ### ❓ Question 4: At which mission item did the drone have a planned hold/loiter?
+
 
 **Answer:** ✅ **Mission Item 18**
 
@@ -149,6 +152,7 @@ Only **Item 18** had a non-zero hold parameter.
 
 ### ❓ Question 5: How long was the planned hold time at that mission item (seconds)?
 
+
 **Answer:** ✅ **30 seconds**
 
 The drone paused mid-mission — likely for surveillance or payload drop.
@@ -156,6 +160,7 @@ The drone paused mid-mission — likely for surveillance or payload drop.
 ---
 
 ### ❓ Question 6: Which bridge is the drone planned to pass by while crossing the Danube in order to reach the other part of the city? (English name)
+
 
 **Answer:** ✅ **Elisabeth Bridge (Erzsébet híd)**
 
@@ -169,7 +174,8 @@ Here, planning ends and **reality begins**.
 
 ---
 
-### ❓ Question 7: Total Flight Time
+### ❓ Question 7: What is the total flight time from takeoff to crash?
+
 
 **Answer:** ✅ **00:10:38.919**
 
@@ -184,7 +190,8 @@ Crash TimeUS   : 687813098
 
 ---
 
-### ❓ Question 8: Crash Timestamp
+### ❓ Question 8: What is the exact log timestamp of the crash event (TimeUS)?
+
 
 **Answer:** ✅ **687813098 (TimeUS)**
 
@@ -194,7 +201,8 @@ mavlogdump.py log.bin | grep "SIM Hit ground"
 
 ---
 
-### ❓ Question 9: Crash Coordinates
+### ❓ Question 9: What are the coordinates where the drone crashed (lat, lon)?
+
 
 **Answer:** ✅ **47.4903055, 19.0460476**
 
@@ -206,7 +214,8 @@ Extracted from GPS entries nearest crash timestamp.
 
 ---
 
-### ❓ Question 10: Impact Speed
+### ❓ Question 10: What was the ground impact speed reported at the moment of crash (m/s)?
+
 
 **Answer:** ✅ **12.93254 m/s**
 
@@ -218,7 +227,8 @@ Directly logged by flight controller on impact.
 
 ---
 
-### ❓ Question 11: Maximum Altitude
+### ❓ Question 11: What was the maximum GPS altitude reached during the flight (meters)?
+
 
 **Answer:** ✅ **377.07 meters**
 
@@ -229,7 +239,8 @@ The drone climbed steadily until it reached its peak of 377.07 meters before des
 
 ---
 
-### ❓ Question 12: Maximum Ground Speed
+### ❓ Question 12: What was the fastest GPS ground speed recorded (m/s)?
+
 
 **Answer:** ✅ **10.24 m/s**
 
@@ -239,7 +250,8 @@ mavlogdump.py --type GPS log.bin | awk -F "Spd :" '{print $2}' | cut -d',' -f1 |
 Similar to altitude, I looked for the maximum value in the Spd (Speed) column of the GPS logs.
 ---
 
-### ❓ Question 13: Takeoff Coordinates
+### ❓ Question 13: What are the coordinates where the drone took off from (lat, lon), and therefore a good location for the police raid to catch the gang member?
+
 
 **Answer:** ✅ **47.4819399, 19.0191600**
 
