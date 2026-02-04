@@ -14,7 +14,7 @@
 > Add your HTB room completion / rank screenshot **right below this section**.
 >
 > ```md
-> ![HTB AoTR 4 Rank Proof](images/rank95.png)
+> ![HTB AoTR 4 Rank Proof](assets/Aotr4-htb.jpg)
 > ```
 >
 > Recommended screenshots:
