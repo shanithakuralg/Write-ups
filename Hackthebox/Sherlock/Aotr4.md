@@ -83,7 +83,7 @@ Spline Waypoints are crucial — they allow **smooth, curved flight paths** inst
 
 ---
 
-### ❓ Question 1: Total Mission Items
+### ❓ Question 1: How many total mission items are defined in the flight plan, including Home, Takeoff, and Land commands?
 
 **Answer:** ✅ **49**
 
@@ -100,8 +100,7 @@ grep "type" AOTR_Winter_Blackout.plan | wc -l
 
 ---
 
-### ❓ Question 2: Spline Waypoints Count
-
+### ❓ Question 2: How many spline waypoints are in the mission?
 **Answer:** ✅ **46**
 
 Spline waypoints (`command: 82`) represent smooth flight motion.
@@ -119,7 +118,7 @@ grep '"command": 82' AOTR_Winter_Blackout.plan | wc -l
 
 ---
 
-### ❓ Question 3: Landmark the Drone Flew Around
+### ❓ Question 3: Which landmark/building does the drone fly around during the planned route?
 
 **Answer:** ✅ **Citadella (Gellért Hill, Budapest)**
 
@@ -133,7 +132,7 @@ grep '"command": 82' AOTR_Winter_Blackout.plan | wc -l
 
 ---
 
-### ❓ Question 4: Planned Hold / Loiter Point
+### ❓ Question 4: At which mission item did the drone have a planned hold/loiter?
 
 **Answer:** ✅ **Mission Item 18**
 
@@ -148,7 +147,7 @@ Only **Item 18** had a non-zero hold parameter.
 
 ---
 
-### ❓ Question 5: Hold Duration
+### ❓ Question 5: How long was the planned hold time at that mission item (seconds)?
 
 **Answer:** ✅ **30 seconds**
 
@@ -156,7 +155,7 @@ The drone paused mid-mission — likely for surveillance or payload drop.
 
 ---
 
-### ❓ Question 6: Bridge Crossed Over Danube
+### ❓ Question 6: Which bridge is the drone planned to pass by while crossing the Danube in order to reach the other part of the city? (English name)
 
 **Answer:** ✅ **Elisabeth Bridge (Erzsébet híd)**
 
