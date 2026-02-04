@@ -120,4 +120,4 @@ The complete step-by-step investigation includes:
 - full question-by-question analysis
 
 🔗 **Full Technical Write-up:**  
-https://github.com/shanithakuralg/Write-ups/blob/main/Hackthebox/Sherlock/Aotr4.md
+[Hack The Box – Sherlock AoTR-4 (Full DFIR Analysis)] (https://github.com/shanithakuralg/Write-ups/blob/main/Hackthebox/Sherlock/Aotr4.md)
