@@ -12,6 +12,7 @@ All cases are solved **independently** without relying on public write-ups.
 | Case | Platform | Focus Area |
 |----|--------|-----------|
 | [🕵️ LuckyShot](./DFIR/luckyshot.md) | Hack The Box (Sherlock) | Linux Forensics, Persistence, Malware |
+| [🛩️ AoTR 4 – A Drone in the Snow](./DFIR/AoTR-4-Drone-in-the-Snow.md) | Hack The Box (Sherlock) | Drone & Flight Forensics |
 | [🕵️ GhostTrace](./DFIR/GhostTrace) | Hack The Box (Sherlock) | Windows Event Logs, Sysmon, PowerShell |
 
 ---
