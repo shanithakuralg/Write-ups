@@ -6,7 +6,7 @@
 **Platform:** Hack The Box – Sherlocks (AoTR Series)  
 **Category:** Drone / Flight Forensics  
 **Difficulty:** Easy  
-**Official HTB Verification:** https://labs.hackthebox.com/achievement/sherlock/847519/1099
+[**Official HTB Verification:**] (https://labs.hackthebox.com/achievement/sherlock/847519/1099)
 
 🏆 **Final Achievement:** Rank 95 on Global Leaderboard
 
