@@ -1,4 +1,25 @@
 <p align="center">
+  <img src="https://www.hackthebox.com/images/logo-htb.svg" width="150">
+</p>
+
+<h1 align="center">WingData – Hack The Box Writeup</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/OS-Linux-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Difficulty-Easy-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
+
+<p align="center">
+  🔗 <strong>Official Completion Verification:</strong><br>
+  https://labs.hackthebox.com/achievement/machine/847519/835
+</p>
+
+---
+
+# 🧠 Machine Overview
+
+<p align="center">
   <img src="./wingdata-banner.jpg" width="100%">
 </p>
 
@@ -8,7 +29,7 @@
   <b>Author:</b> Saurabh Tomar <br>
   <b>Platform:</b> Hack The Box <br>
   <b>OS:</b> Linux <br>
-  <b>Difficulty:</b> Medium
+  <b>Difficulty:</b> Easy
 </p>
 
 ---
@@ -45,7 +66,7 @@ This machine focuses heavily on vulnerability chaining and understanding filesys
 ## Port Scan
 
 ```bash
-nmap -sS -sCV --open -p- --min-rate 5000 -n -Pn <TARGET_IP>
+nmap -sV -sC <TARGET_IP>
 ```
 
 ### Open Ports
@@ -312,6 +333,12 @@ Upgrade Python to patched versions:
 - Real-world Attack Chaining
 
 ---
+
+# 🚀 Final Thoughts
+
+This machine reinforced the importance of methodical enumeration and how small weaknesses can escalate into full system compromise.
+
+Continuous practice on platforms like Hack The Box significantly improves real-world penetration testing mindset.
 
 # 📌 Notes
 
