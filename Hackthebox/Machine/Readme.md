@@ -1,110 +1,131 @@
 <p align="center">
-  <img src="https://www.hackthebox.com/images/logo-htb.svg" width="200">
+  <img src="https://www.hackthebox.com/images/logo-htb.svg" width="180">
 </p>
 
-<h1 align="center">🚀 Hack The Box – Machine Writeups</h1>
+<h1 align="center">Hack The Box – Machine Writeups</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Hack%20The%20Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black">
-  <img src="https://img.shields.io/badge/Focus-Linux-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Writeups-1-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Category-Machines-black?style=for-the-badge">
 </p>
 
 ---
 
-# 🧠 Overview
+# 🧠 About This Repository
 
-This repository contains detailed writeups of Hack The Box machines I have successfully completed.
+This section contains structured and well-documented writeups of Hack The Box machines.
 
 Each writeup includes:
 
-- 🔍 Enumeration methodology  
-- 💣 Exploitation steps  
-- 🔐 Credential access  
-- 🚀 Privilege escalation  
-- 🧩 Attack chain explanation  
-- 🛡️ Mitigation insights  
+- 🔍 Enumeration  
+- 💣 Exploitation  
+- 🔐 Credential Access  
+- 🚀 Privilege Escalation  
+- 🛡 Mitigation Insights  
 
-The goal of this collection is to document real-world attack techniques and strengthen practical penetration testing skills.
-
----
-
-# 📊 Machines Summary
-
-| 🖥 Machine | 💻 OS | 🎯 Difficulty | 🏁 Status | 🔗 Writeup |
-|------------|--------|---------------|------------|------------|
-| WingData | Linux | Easy | ✅ Completed | [View Writeup](./Linux/Easy/WingData/WingData.md) |
+The structure is designed to scale as more machines are completed.
 
 ---
 
-# 📁 Repository Structure
-
-```
-Hackthebox/
-└── Machine/
-    ├── README.md
-    └── Linux/
-        └── Easy/
-            └── WingData/
-                └── WingData.md
-```
+# 📂 Machines by Operating System
 
 ---
 
-# 🖥 WingData – Machine Overview
+## 🐧 Linux Machines
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-Easy-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Category-Real%20World%20Exploitation-blue?style=flat-square">
-</p>
+### 🟢 Easy
 
-**WingData** is an Easy Linux machine that demonstrates:
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| WingData | Easy | ✅ Completed | [View](./Linux/Easy/WingData/WingData.md) |
 
-- Web enumeration
-- Remote Code Execution
-- Credential extraction
-- Hash cracking
-- Sudo misconfiguration abuse
-- SSH key injection for privilege escalation
+---
 
-This machine emphasizes vulnerability chaining and understanding how small weaknesses combine into full system compromise.
+### 🟡 Medium
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Medium | ⏳ Pending | - |
+
+---
+
+### 🔴 Hard
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Hard | ⏳ Pending | - |
+
+---
+
+### ⚫ Insane
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Insane | ⏳ Pending | - |
+
+---
+
+## 🪟 Windows Machines
+
+### 🟢 Easy
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Easy | ⏳ Pending | - |
+
+---
+
+### 🟡 Medium
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Medium | ⏳ Pending | - |
+
+---
+
+### 🔴 Hard
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Hard | ⏳ Pending | - |
+
+---
+
+### ⚫ Insane
+
+| Machine | Difficulty | Status | Writeup |
+|----------|------------|---------|----------|
+| _Coming Soon_ | Insane | ⏳ Pending | - |
+
+---
+
+# 📈 Progress Overview
+
+| OS | Easy | Medium | Hard | Insane |
+|-----|------|--------|------|--------|
+| Linux | 1 | 0 | 0 | 0 |
+| Windows | 0 | 0 | 0 | 0 |
 
 ---
 
 # 🏆 Verification
 
-Machine completion verified here:
-
-🔗 https://labs.hackthebox.com/achievement/machine/847519/835
-
----
-
-# 📈 Progress Tracker
-
-| Difficulty | Completed |
-|------------|------------|
-| 🟢 Easy | 1 |
-| 🟡 Medium | 0 |
-| 🔴 Hard | 0 |
-| ⚫ Insane | 0 |
+WingData Achievement:  
+https://labs.hackthebox.com/achievement/machine/847519/835
 
 ---
 
-# 🛡️ Skills Demonstrated
+# 🛡 Skills Covered
 
-- Network Enumeration
-- Web Exploitation
-- Hash Cracking
-- Linux Privilege Escalation
-- CVE Research
-- Real-World Attack Flow Mapping
+- Network Enumeration  
+- Web Exploitation  
+- Linux Privilege Escalation  
+- Windows Enumeration (Upcoming)  
+- CVE Research  
+- Post Exploitation  
 
 ---
 
 <p align="center">
-  🔥 Continuous Learning • Ethical Hacking • Offensive Security
-</p>
-
-<p align="center">
-  Made with 💚 by Saurabh Tomar
+  🔥 Offensive Security Journey – Continuous Improvement
 </p>
