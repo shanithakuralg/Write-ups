@@ -10,8 +10,9 @@
 </p>
 
 ---
-
+<p align="center">
 # 🏆 Interpreter - HackTheBox Writeup
+</p>
 
 <p align="center">
   <img src="solved_machine_banner.PNG" alt="Interpreter Banner" width="700">
