@@ -523,6 +523,7 @@ We have **euid=0(root)** - Privilege Escalation successful!
 
 # 🎉 **Machine Solved!**
 <p align="center">
+  
 ![Machine Solved](solved_machine_banner.PNG)
 </p>
 
