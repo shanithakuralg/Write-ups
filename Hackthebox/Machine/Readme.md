@@ -45,7 +45,7 @@ The structure is designed to scale as more machines are completed.
 
 | Machine | Difficulty | Status | Writeup |
 |----------|------------|---------|----------|
-| _Coming Soon_ | Medium | ⏳ Pending | - |
+| Interpreter | Medium | ✅ Completed | [view](./Linux/Medium/Interpreter/interpreter.md) |
 
 ---
 
