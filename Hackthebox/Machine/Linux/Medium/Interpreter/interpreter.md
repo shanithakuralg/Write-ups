@@ -8,12 +8,12 @@
   <img src="https://img.shields.io/badge/Platform-Hack%20The%20Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black">
   <img src="https://img.shields.io/badge/Category-Machines-black?style=for-the-badge">
 </p>
-
+```
 # 🏆 **Interpreter - HackTheBox Writeup**
 <p align="center">
     ![Interpreter Banner](solved_machine_banner.PNG)
 ## **Machine:** Linux | **Difficulty:** Medium | **Name:** Interpreter
-### **Achievement Link:** [https://labs.hackthebox.com/achievement/machine/847519/841](https://labs.hackthebox.com/achievement/machine/847519/841)
+### **Achievement Link:** [Verification link](https://labs.hackthebox.com/achievement/machine/847519/841)
 ### **Pwned By:** Saurabh Tomar | **Date:** 23 Feb 2026 | **Points:** 45
 </p>
 
