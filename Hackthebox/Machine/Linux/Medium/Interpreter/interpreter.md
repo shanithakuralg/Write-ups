@@ -526,7 +526,7 @@ We have **euid=0(root)** - Privilege Escalation successful!
 ---
 
 <p align="center">
- <h2>🎉 Machine Solved!</h2>
+ **🎉 Machine Solved!**
 </p>
 
 <p align="center">
