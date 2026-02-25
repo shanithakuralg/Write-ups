@@ -110,7 +110,7 @@ The structure is designed to scale as more machines are completed.
 
 # 🏆 Machine Achievements
 
-### 2. WingData (Linux - Easy)
+### 1. WingData (Linux - Easy)
 
 **Achievement:** [View Certificate](https://labs.hackthebox.com/achievement/machine/847519/835)
 
@@ -129,7 +129,7 @@ The structure is designed to scale as more machines are completed.
 **Writeup:** [Read Full Writeup](./Linux/Easy/WingData/WingData.md)
 
 ---
-### 3. Interpreter (Linux - Medium)
+### 2. Interpreter (Linux - Medium)
 
 **Achievement:** [View Certificate](https://labs.hackthebox.com/achievement/machine/847519/841)
 
@@ -153,13 +153,11 @@ The structure is designed to scale as more machines are completed.
 - Weak Password Hashing (PBKDF2 with crackable password)
 - SUID Binary Creation for Privilege Escalation
 
-**Writeup:** [Read Full Writeup](./Linux/Medium/Interpreter/Interpreter.md)
+**Writeup:** [Read Full Writeup](./Linux/Medium/Interpreter/interpreter.md)
 
 ---
----
-## 🏆 Machine Achievements
 
-### 1. MonitorsFour (Windows - Easy)
+### 3. MonitorsFour (Windows - Easy)
 
 **Achievement:** [View Certificate](https://labs.hackthebox.com/achievement/machine/847519/814)
 
