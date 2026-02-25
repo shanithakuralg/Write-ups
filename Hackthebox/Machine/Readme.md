@@ -71,7 +71,7 @@ The structure is designed to scale as more machines are completed.
 
 | Machine | Difficulty | Status | Writeup |
 |----------|------------|---------|----------|
-| MonitorsFour | Easy | ✅ Completed | [View](./Linux/Easy/WingData/WingData.md) |
+| MonitorsFour | Easy | ✅ Completed | [View](./Windows/Easy/Monitorsfour/Monitorfour.md) |
 
 ---
 
@@ -110,19 +110,25 @@ The structure is designed to scale as more machines are completed.
 
 # 🏆 Verification
 
-WingData Achievement:  
-https://labs.hackthebox.com/achievement/machine/847519/835
+### 2. WingData (Linux - Easy)
+
+**Achievement:** [View Certificate](https://labs.hackthebox.com/achievement/machine/847519/835)
+
+**Completion Date:** [Add Date]
+
+**Skills Covered:**
+- ✅ Network Enumeration
+- ✅ Web Exploitation
+- ✅ Linux Privilege Escalation
+- ✅ CVE Research
+- ✅ Post Exploitation
+
+**Key Vulnerabilities:**
+- [Add vulnerabilities here]
+
+**Writeup:** [./Linux/Easy/WingData/WingData.md]
 
 ---
-
-# 🛡 Skills Covered
-
-- Network Enumeration  
-- Web Exploitation  
-- Linux Privilege Escalation  
-- Windows Enumeration (Upcoming)  
-- CVE Research  
-- Post Exploitation  
 
 ---
 ## 🏆 Machine Achievements
@@ -149,7 +155,7 @@ https://labs.hackthebox.com/achievement/machine/847519/835
 - CVE-2025-24367 (Cacti RCE)
 - CVE-2025-9074 (Docker Desktop API)
 
-**Writeup:** [Read Full Writeup](./Monitorfour.md)
+**Writeup:** [Read Full Writeup](./Windows/Easy/Monitorsfour/Monitorfour.md)
 
 ---
 
