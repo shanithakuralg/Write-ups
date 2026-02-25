@@ -108,7 +108,7 @@ The structure is designed to scale as more machines are completed.
 
 ---
 
-# 🏆 Verification
+# 🏆 Machine Achievements
 
 ### 2. WingData (Linux - Easy)
 
@@ -126,7 +126,7 @@ The structure is designed to scale as more machines are completed.
 **Key Vulnerabilities:**
 - [Add vulnerabilities here]
 
-**Writeup:** [./Linux/Easy/WingData/WingData.md]
+**Writeup:** [Read Full Writeup](./Linux/Easy/WingData/WingData.md)
 
 ---
 
