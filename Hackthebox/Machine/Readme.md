@@ -184,7 +184,13 @@ The structure is designed to scale as more machines are completed.
 - CVE-2025-9074 (Docker Desktop API)
 
 **Writeup:** [Read Full Writeup](./Windows/Easy/Monitorsfour/Monitorfour.md)
+---
+## 📫 Connect With Me
 
+- **GitHub:** [Your GitHub](https://github.com/shanithakurlag)
+- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/saurabh-tomar-b3095b21b)
+- **Twitter:** [Your Twitter](https://x.com/whoami16196)
+- **HTB Profile:** [Profile Link](https://app.hackthebox.com/profile/847519)
 ---
 
 <p align="center">
