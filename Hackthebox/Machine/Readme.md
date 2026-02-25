@@ -189,10 +189,11 @@ The structure is designed to scale as more machines are completed.
 
 ## 📫 Connect With Me
 
-- **GitHub:** [Your GitHub](https://github.com/shanithakurlag)
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/saurabh-tomar-b3095b21b)
-- **Twitter:** [Your Twitter](https://x.com/whoami16196)
-- **HTB Profile:** [Profile Link](https://app.hackthebox.com/profile/847519)
+- **GitHub:** [GitHub](https://github.com/shanithakuralg)
+- **LinkedIn:** [LinkedIn](https://linkedin.com/in/saurabh-tomar-b3095b21b)
+- **Twitter:** [Twitter](https://x.com/whoami16196)
+- **HTB Profile:** [Hackthebox](https://app.hackthebox.com/profile/847519)
+- **Portfolio:**[Portfolio](https://saurabh-tomar-portfolio.onrender.com/)
 ---
 
 <p align="center">
