@@ -124,7 +124,11 @@ The structure is designed to scale as more machines are completed.
 - ✅ Post Exploitation
 
 **Key Vulnerabilities:**
-- [Add vulnerabilities here]
+- CVE-2025-47812 (Wing FTP Server 7.4.3 - Unauthenticated RCE)
+- CVE-2025-4138 (Python 3.12.3 Tarfile Filter Bypass)
+- Weak Password with Salted SHA256 Hash
+- Sudo Misconfiguration (Restore Script Abuse)
+- SSH Key Injection via Symlink Traversal
 
 **Writeup:** [Read Full Writeup](./Linux/Easy/WingData/WingData.md)
 
