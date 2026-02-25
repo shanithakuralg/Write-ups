@@ -11,7 +11,7 @@
 
 
 
-# MonitorsFour - HackTheBox Writeup
+<h1 align="center"> MonitorsFour - HackTheBox Writeup </h1>
 
 ![Banner](banner.PNG)
 
@@ -664,6 +664,7 @@ Thanks for reading! I hope this writeup helps you understand the attack path and
 ![Banner](banner.PNG)
 
 **Happy Hacking! 🚀**
+
 
 
 
