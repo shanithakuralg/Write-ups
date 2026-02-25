@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="https://www.hackthebox.com/images/logo-htb.svg" width="180">
+</p>
+
+<h1 align="center">Hack The Box – Machine Writeups</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Hack%20The%20Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black">
+  <img src="https://img.shields.io/badge/Category-Machines-black?style=for-the-badge">
+</p>
+
+
+
 # MonitorsFour - HackTheBox Writeup
 
 ![Banner](banner.PNG)
@@ -651,5 +664,6 @@ Thanks for reading! I hope this writeup helps you understand the attack path and
 ![Banner](banner.PNG)
 
 **Happy Hacking! 🚀**
+
 
 
