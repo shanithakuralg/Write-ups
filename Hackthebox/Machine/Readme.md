@@ -129,7 +129,33 @@ The structure is designed to scale as more machines are completed.
 **Writeup:** [Read Full Writeup](./Linux/Easy/WingData/WingData.md)
 
 ---
+### 3. Interpreter (Linux - Medium)
 
+**Achievement:** [View Certificate](https://labs.hackthebox.com/achievement/machine/847519/841)
+
+**Completion Date:** February 23, 2026
+
+**Skills Covered:**
+- ✅ Network Enumeration (Nmap)
+- ✅ CVE-2023-43208 Exploitation (Mirth Connect)
+- ✅ Java Deserialization Vulnerability
+- ✅ Database Enumeration (MariaDB)
+- ✅ PBKDF2-HMAC-SHA256 Hash Cracking
+- ✅ Python Code Review & Analysis
+- ✅ Python F-String Injection
+- ✅ Regex Bypass Techniques
+- ✅ SUID Binary Exploitation
+- ✅ Linux Privilege Escalation
+
+**Key Vulnerabilities:**
+- CVE-2023-43208 (Mirth Connect Deserialization RCE)
+- Python F-String Injection via eval()
+- Weak Password Hashing (PBKDF2 with crackable password)
+- SUID Binary Creation for Privilege Escalation
+
+**Writeup:** [Read Full Writeup](./Linux/Medium/Interpreter/Interpreter.md)
+
+---
 ---
 ## 🏆 Machine Achievements
 
