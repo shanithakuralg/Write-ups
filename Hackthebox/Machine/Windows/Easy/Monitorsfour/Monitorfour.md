@@ -453,7 +453,6 @@ www-data@821fbd6a43fa:~/html/cacti$ for i in $(seq 1 254); do (curl -s --connect
 192.168.65.7:2375 OPEN
 ```
 
-#![Dirsearch Output](dirsearch_search_output.PNG)
 
 **Found it!** The Docker API is accessible at `192.168.65.7:2375` without authentication.
 
@@ -652,4 +651,5 @@ Thanks for reading! I hope this writeup helps you understand the attack path and
 ![Banner](banner.PNG)
 
 **Happy Hacking! 🚀**
+
 
