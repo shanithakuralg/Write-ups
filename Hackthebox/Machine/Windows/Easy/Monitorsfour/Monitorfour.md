@@ -63,8 +63,12 @@ echo "10.129.12.34 monitorsfour.htb" | sudo tee -a /etc/hosts
 I started with a comprehensive Nmap scan to identify open ports and running services:
 
 ```bash
-nmap -sC -sV -p- 10.129.12.34 -oN nmap_full.txt
+nmap -p- -A monitorsfour.htb
 ```
+
+Where:
+- `-p-` scans all 65535 ports
+- `-A` enables OS detection, version detection, script scanning, and traceroute
 
 ![Nmap Scan Results](nmap_output.PNG)
 
@@ -104,21 +108,15 @@ The site appears to be a standard corporate landing page with static content. Ho
 
 ### Subdomain Discovery
 
-Since the main site didn't reveal obvious vulnerabilities, I performed subdomain enumeration using ffuf:
+Since the main site didn't reveal obvious vulnerabilities, I performed subdomain enumeration using gobuster:
 
 ```bash
-ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt \
-     -u http://monitorsfour.htb \
-     -H "Host: FUZZ.monitorsfour.htb" -ac
+gobuster vhost -u http://monitorsfour.htb -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain
 ```
 
 ![Virtual Host Discovery](virtual_host_discovery.PNG)
 
 **Result:** Found subdomain `cacti`
-
-```
-cacti     [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 91ms]
-```
 
 Excellent! Cacti is an open-source network monitoring and graphing tool. Historically, Cacti has had several critical vulnerabilities, including Remote Code Execution (RCE) flaws.
 
@@ -134,12 +132,21 @@ The Cacti login page requires authentication, so we need to find valid credentia
 
 ### Directory and API Enumeration
 
-I performed directory and API endpoint fuzzing on the main website:
+I performed directory enumeration on the main website using dirsearch:
 
 ```bash
-ffuf -w /usr/share/seclists/Discovery/Web-Content/api/api-endpoints.txt \
-     -u http://monitorsfour.htb/FUZZ -ac
+dirsearch -u http://monitorsfour.htb -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
+
+![Dirsearch Output](dirsearch_search_output.PNG)
+
+After finding some endpoints, I used **Arjun** tool to discover hidden parameters. Arjun is a powerful tool that can find query parameters for URL endpoints:
+
+```bash
+arjun -u http://monitorsfour.htb/user
+```
+
+![Arjun Tool Output](arjun_tool_output_for_finding_parameter.PNG)
 
 **Discovered Endpoint:** `/user` - This endpoint accepts a `token` parameter
 
@@ -210,7 +217,17 @@ The hashes are 32 characters long, indicating MD5 hashing algorithm. MD5 is cons
 - Rainbow tables (precomputed hash databases) exist
 - Collision attacks are feasible
 
-I used CrackStation, an online service with billions of precomputed MD5 hashes:
+I used **Hashcat** to crack the MD5 hashes. Hashcat is a powerful password recovery tool that supports various hash types:
+
+```bash
+hashcat -m 0 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
+```
+
+Where:
+- `-m 0` specifies MD5 hash mode
+- `-a 0` specifies dictionary attack mode
+- `hashes.txt` contains the MD5 hashes
+- `rockyou.txt` is the wordlist
 
 ![Hashcat Password Cracking](hashcat_password_cracking_output.PNG)
 
@@ -603,9 +620,11 @@ This machine taught me several valuable lessons about penetration testing and se
 ### Tools Used
 
 - **Nmap** - Port scanning and service enumeration
-- **ffuf** - Subdomain and directory fuzzing
+- **Gobuster** - Virtual host/subdomain discovery
+- **Dirsearch** - Directory and file enumeration
+- **Arjun** - HTTP parameter discovery
+- **Hashcat** - Password hash cracking
 - **curl** - API testing and Docker API interaction
-- **CrackStation** - MD5 hash cracking
 - **Netcat** - Reverse shell listener
 - **Python** - HTTP server for payload delivery
 - **Docker API** - Container creation and manipulation
