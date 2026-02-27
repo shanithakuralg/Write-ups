@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" width="800">
+  <img src="./banner.png" width="800">
 </p>
 
 <h1 align="center">🕵️ LuckyShot — Sherlock DFIR Write-Up</h1>
