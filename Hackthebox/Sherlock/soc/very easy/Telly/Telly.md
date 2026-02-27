@@ -10,7 +10,7 @@
 - **Difficulty:** Very Easy
 - **Category:** SOC (Security Operations Center)
 - **Author:** Saurabh Tomar
-- **Global Rank:** As shown in banner
+- **Global Rank:** 596
 - **Verification URL:** [https://labs.hackthebox.com/achievement/sherlock/847519/1144](https://labs.hackthebox.com/achievement/sherlock/847519/1144)
 
 ---
@@ -56,8 +56,6 @@ Through this challenge, I gained hands-on experience in:
 **Answer:** `2026-01-27 10:39:28`
 
 **Explanation:** By examining the Wireshark capture and filtering for Telnet traffic, we identified the exact timestamp when the exploitation occurred. The arrival time in the packet capture shows: `Jan 27, 2026 16:09:28.319357980 India Standard Time`, which converts to `2026-01-27 10:39:28` UTC.
-
-![Wireshark Telnet Output](./whireshark_output_for_telnet.PNG)
 
 ---
 
@@ -195,4 +193,5 @@ The skills gained from this challenge are directly applicable to real-world SOC 
 **Author:** Saurabh Tomar  
 **Date:** 2026  
 **Platform:** HackTheBox Sherlock
+
 
