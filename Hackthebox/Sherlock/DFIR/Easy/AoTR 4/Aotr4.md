@@ -14,7 +14,7 @@
 
 ## 📸 Proof of Completion
 
-![HTB AoTR 4 Rank Proof](https://raw.githubusercontent.com/shanithakuralg/Write-ups/main/Hackthebox/Sherlock/assets/Aotr4-htb.jpg)
+![HTB AoTR 4 Rank Proof](./Aotr4-htb.jpg)
 
 </div>
 
